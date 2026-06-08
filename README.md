@@ -67,3 +67,37 @@ Output
 ```
 janc bwmk!
 ```
+
+## 3. Pengurutan Berkas Asisten Lab
+Batas Waktu (Time Limit): 1.5 detik | 
+Batas Memori (Memory Limit): 256 MB
+
+### Deskripsi Soal
+Asisten Laboratorium Informatika ingin merapikan data nilai tugas praktikan. Terdapat N praktikan yang memiliki data Nama (berupa satu kata) dan Nilai Akhir (berupa bilangan bulat).
+
+Asisten lab meminta Anda mengurutkan data tersebut dengan aturan prioritas sebagai berikut:
+1. Urutkan berdasarkan Nilai Akhir secara menurun (descending - dari yang terbesar ke terkecil)
+2. Jika ada dua praktikan atau lebih yang memiliki Nilai Akhir yang sama, urutkan berdasarkan Nama secara menaik (ascending - sesuai urutan alfabetis/leksikografis)
+
+### Format Input
+* Baris pertama berisi satu bilangan bulat N (1 <= N <= 50.000), menyatakan jumlah praktikan.
+* N baris berikutnya masing-masing berisi satu string nama (tanpa spasi) dan satu bilangan bulat nilai (0 <= nilai <= 100)
+
+### Format Output
+Cetak N baris data praktikan yang telah diurutkan dengan format: `Nama Nilai`
+
+#### Contoh Kasus
+Input
+```
+3
+Budi 85
+Andi 90
+Ali 85
+```
+
+Output
+```
+Andi 90
+Ali 85
+Budi 85
+```
