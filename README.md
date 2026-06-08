@@ -129,3 +129,37 @@ Output
 ```
 3
 ```
+
+## 5. Manajemen Batas Memori Server Cloud
+Batas Waktu (Time Limit): 2.0 detik | 
+Batas Memori (Memory Limit): 256 MB
+
+### Deskripsi Soal
+Unit TI Kampus memiliki sekelompok server sebanyak N buah. Masing-masing server memiliki beban kerja berupa penggunaan memori dalam satuan Gigabyte yang dinyatakan dalam array A. Kampus ingin menerapkan kebijakan restrukturisasi efisiensi dengan menetapkan sebuah Batas Ambang Penggunaan Memori (M) yang seragam pada seluruh server tersebut.
+
+Aturan pemangkasan memori bekerja sebagai berikut:
+* Jika penggunaan memori sebuah server melebihi nilai batas M, maka penggunaan memori server tersebut akan dipangkas tepat menjadi senilai M
+* Jika penggunaan memori server sejak awal kurang dari atau sama dengan nilai batas M, memori server tersebut tidak akan diubah sama sekali
+
+Pihak TI kampus memberikan target bahwa total akumulasi memori dari seluruh server setelah pemangkasan tidak boleh melebihi kapasitas target sebesar T Gigabyte. Tugas Anda adalah mencari nilai batas M terbesar berupa bilangan bulat yang memenuhi target efisiensi tersebut!
+
+### Format Input
+* Baris pertama berisi dua buah bilangan bulat: N (1 <= N <= 100.000) mewakili jumlah server, dan T (1 <= T <= 10^14) mewakili target total alokasi memori maksimal
+* Baris kedua berisi N buah bilangan bulat Ai (1 <= Ai <= 10^9) yang menyatakan kapasitas memori awal masing-masing server
+
+### Format Output
+Cetak satu bilangan bulat yang menyatakan nilai konfigurasi batas M terbesar yang memenuhi syarat. Jika total memori awal server dari awal sudah tidak melebihi T, maka konfigurasi batas M tidak perlu diterapkan (program cukup mencetak nilai memori terbesar yang ada pada server awal).
+
+#### Contoh Kasus
+Input
+```
+4 10
+2 3 4 5
+```
+
+Output
+```
+2
+```
+
+Penjelasan: Jika kita memilih M = 2, maka kapasitas server berubah menjadi [2, 2, 2, 2]. Total penjumlahannya adalah 2+2+2+2 = 8 (di bawah target 10). Jika memilih M = 3, kapasitas server menjadi [2, 3, 3, 3] dengan total 11 (melebihi target 10). Maka nilai bilangan bulat terbesar bagi M adalah 2.
