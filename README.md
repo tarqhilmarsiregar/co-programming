@@ -101,3 +101,31 @@ Andi 90
 Ali 85
 Budi 85
 ```
+
+## 4. Detektor Duplikat Berkas Tugas
+Batas Waktu (Time Limit): 2.0 detik | 
+Batas Memori (Memory Limit): 256 MB
+
+### Deskripsi Soal
+Dosen menduga ada mahasiswa yang mengumpulkan berkas tugas yang identik satu sama lain. Setiap berkas tugas direpresentasikan oleh sebuah kode unik berupa bilangan bulat. Terdapat daftar sebanyak N kode tugas yang masuk ke sistem pengumpulan data.
+
+Dosen ingin mengetahui: Berapakah jumlah total berkas tugas duplikat yang ada di dalam sistem? Berkas dikategorikan sebagai duplikat jika kode tugas tersebut sudah pernah muncul/dikumpulkan sebelumnya oleh mahasiswa lain.
+
+### Format Input
+* Baris pertama berisi satu bilangan bulat N (1 <= N <= 100.000)
+* Baris kedua berisi N bilangan bulat Ai (1 <= Ai <= 10^9), yang merupakan kode unik dari masing-masing berkas tugas.
+
+### Format Output
+Cetak satu bilangan bulat yang menyatakan jumlah total berkas tugas yang terdeteksi sebagai duplikat.
+
+#### Contoh Kasus
+Input
+```
+6
+10 20 10 30 20 10
+```
+
+Output
+```
+3
+```
