@@ -1,6 +1,6 @@
 # Competitive Programming
 
-## Langkah Minimal Si Joki Fotokopi
+## 1. Langkah Minimal Si Joki Fotokopi
 Batas Waktu (Time Limit): 1.0 detik | 
 Batas Memori (Memory Limit): 256 MB
 
@@ -39,3 +39,31 @@ Output
 ```
 
 Penjelasan: Lompat 5 + 5 + 2, total 3 langkah
+
+## 2. Enkripsi Pesan Rahasia Ormawa
+Batas Waktu (Time Limit): 1.0 detik | 
+Batas Memori (Memory Limit): 256 MB
+
+### Deskripsi Soal
+Untuk menjaga kerahasiaan koordinasi rapat, sebuah organisasi mahasiswa (Ormawa) menggunakan metode enkripsi berbasis pergeseran karakter (Caesar Cipher modifikasi). Aturannya adalah setiap huruf alfabet kecil (a-z) di dalam pesan akan digeser maju sebanyak K posisi di dalam urutan alfabet.
+
+Pergeseran ini bersifat memutar (circular). Artinya, jika huruf z digeser maju sebanyak 1 posisi, ia akan kembali menjadi huruf a. Karakter selain huruf kecil (seperti spasi, angka, atau tanda baca) tidak mengalami perubahan sama sekali. Tugas Anda adalah membuat program enkripsinya!
+
+### Format Input
+* Baris pertama berisi satu bilangan bulat K (0 <= K <= 100), yang menyatakan jumlah pergeseran posisi
+* Baris kedua berisi sebuah string S (1 <= |S| <= 10.000), yang merupakan pesan asli yang akan dienkripsi. S dapat mengandung spasi.
+
+### Format Output
+Cetak satu baris string hasil enkripsi dari pesan tersebut.
+
+#### Contoh Kasus
+Input
+```
+2
+halo zuki!
+```
+
+Output
+```
+janc bwmk!
+```
